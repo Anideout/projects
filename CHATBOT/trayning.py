@@ -48,6 +48,6 @@ for document in documents:
     output_row = list(output_empty)
     output_row[classes.indx(documents[1])] = 1
     training.append([bag, output_row])
-random.shurffle(training)
+random.shuffle(training)
 training = np.array(training)
 print(training)
